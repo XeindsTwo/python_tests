@@ -1,7 +1,6 @@
 from CheckPassword import CheckPassword
 
-user = CheckPassword("Ffgdfgd2fg")
+user = CheckPassword("qwErty")
 
-user.validatePassword()
-print(user.password_strength())
 print(user.is_common_password())
+print(user.password_strength())

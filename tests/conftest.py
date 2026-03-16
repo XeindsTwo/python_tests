@@ -1,13 +1,6 @@
 import pytest
-from src.CheckPassword import CheckPassword
-
-
-@pytest.fixture
-def password():
-    return CheckPassword("assword")
+from src.BankAccount import BankAccount
 
 @pytest.fixture
-def password_factory():
-    def _make(password_value):
-        return CheckPassword(password_value)
-    return _make
+def account():
+    return BankAccount("Иван", balance=1000)

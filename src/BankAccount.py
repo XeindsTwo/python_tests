@@ -22,4 +22,3 @@ class BankAccount:
 
     def get_transaction_count(self):
         return len(self.transactions)
-    #test

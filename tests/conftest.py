@@ -3,6 +3,12 @@ from src.BankAccount import BankAccount
 
 @pytest.fixture(scope="module")
 def account():
-    acc = BankAccount("Иван", balance=1000)
-    print(f"\nСоздан объект, id={id(acc)}")
-    return acc
+    account = BankAccount("Амирус", balance=1000)
+    print(f"\nСоздан объект, id={id(account)}")
+    return account
+
+@pytest.fixture(scope="module")
+def account_readonly():
+    account = BankAccount("Амирус", balance=1000)
+    print(f"\nСоздан один объект на все тесты")
+    return account
